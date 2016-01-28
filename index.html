@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="UndFnd">
+    <meta name="author" content="UndFnd">
+    <meta property="fb:app_id" content="935392736514362">
+    <meta property="og:url" content="http://www.undfnd.com/">
+    <meta property="og:image" content="http://www.undfnd.com/img/logo-black.png">
+    <link rel="icon" href="img/logo-black.ico">
+
+    <title>UndFnd</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="bootstrap-3.3.5-dist/css/animate.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap-3.3.5-dist/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72911251-1', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'userId', 'UA-72911251-1'); 
+</script>
+
+<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.js">
+    $('body').scrollspy({target: '#navbar-scroll'});
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+</script>
+
+<script type="text/javascript" src="bootstrap-3.3.5-dist/js/bootstrap.js">
+
+$(document).ready(function() {
+  // navigation click actions 
+  $('#navbar-scroll').on('click', function(event){
+    event.preventDefault();
+    var sectionID = $(this).attr("data-id");
+    scrollToID('#' + sectionID, 750);
+  });
+  // scroll to top action
+  $('.scroll-top').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop:0}, 'slow');     
+  });
+
+});
+// scroll function
+function scrollToID(id, speed){
+  var offSet = -100;
+  var targetOffset = $(id).offset().top - offSet;
+  var mainNav = $('#navbar-scroll');
+  $('html,body').animate({scrollTop:targetOffset}, speed);
+  if (mainNav.hasClass("open")) {
+    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+    mainNav.removeClass("open");
+  }
+}
+if (typeof console === "undefined") {
+    console = {
+        log: function() { }
+    };
+}
+</script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '935392736514362',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+  </head>
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.5&appId=1404441176520343";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <div class="site-wrapper" >
+
+      <div class="site-wrapper-inner"  id="undfnd">
+
+        <div class="cover-container">
+          <div class="masthead clearfix animated fadeInDown">
+          <div class="masthead-brand"><a href="http://www.undfnd.com"><img id="logo" src="img/logo.png"></a></div>
+            <div class="inner">
+              
+              <div class="masthead-navbar" id="navbar-scroll">
+                <ul class="nav masthead-nav" role="tablist">
+                  <li class="active"><a href="#undfnd" data-id="undfnd">Home</a></li>
+                  <li><a class="scroll-link" data-id="projects" href="#projects">Projects</a></li>
+                  
+                  <li><a class="scroll-link" data-id="music" href="#music">Music</a></li>
+                  <li><a class="scroll-link" data-id="contact" href="#contact">Contact</a></li>
+                </ul>
+          </div>
+        </div>
+        </div><!--masthead clearfix-->
+
+
+          <div class="inner cover">
+            <center><div class="separator line-separator" id="projects"></div></center>
+            <h2 class="id-title">#Projects</h2>
+
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Heavens Down - UndFnd (YHY PROJECT)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+    <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="430" src="https://www.youtube.com/embed/ROAI3P9B_aY?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+<div class="col-xs-11 col-sm-4 col-md-4 col-lg-4">
+<p class="navbar-text" style="text-align:center;">
+Skies are closing <br />
+Songs are fading <br />
+Stars now falling rain <br />
+<br />
+Spaces heavy <br />
+Faces empty <br />
+Heavens stairs far away <br />
+<br />
+Perhaps yesterday <br />
+Maybe long ago <br />
+I gave up reaching for such place <br />
+Maybe not for me <br />
+Not a room for me <br />
+So far away it seems <br />
+<br />
+Heavens down, they say <br />
+Heavens down, I dont see it <br />
+Heavens down, they say <br />
+Heavens down, I'd never see it <br />
+<br />
+</p>
+</div>
+
+<div class="col-xs-1 col-sm-2 col-md-2 col-lg-2"></div>
+
+<div class="col-xs-11 col-sm-4 col-md-4 col-lg-4">
+<p class="navbar-text" style="text-align:center;">
+Maybe I'm afraid <br />
+Perhaps not too late <br />
+I look up reaching for such place <br />
+<br />
+Maybe not for me <br />
+Not a room for me <br />
+So far away it seems <br />
+<br />
+Heavens down, they say <br />
+Heavens down, I dont see it <br />
+Heavens down, they say <br />
+Heavens down, I'd never see it <br />
+<br />
+Spare me a song <br />
+Spare me a minute <br /> 
+Spare me a word <br />
+<br />
+Heavens down, they say <br />
+Heavens down, I dont see it <br />
+<br />
+</p>
+</div>
+</div>
+    </div>
+  </div>
+  <center><div class="separator line-separator"></div></center>
+
+  <div class="panel">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          SAY SOMETHING LIVE COVER - UndFnd (YHY PROJECT)
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="430" src="https://www.youtube.com/embed/Phb-2Oo2O-Q?rel=0&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+<div class="col-xs-11 col-sm-5 col-md-5 col-lg-5">
+<p class="navbar-text" style="text-align:center;">
+Say something, I'm giving up on you <br />
+I'll be the one if you want me to <br />
+Anywhere I would've followed you <br />
+Say something, I'm giving up on you <br />
+ <br />
+And I... am feeling so small <br />
+It was over my head <br />
+I know nothing at all <br />
+And I... will stumble and fall <br />
+I'm still learning to love <br />
+Just starting to crawl <br />
+ <br />
+Say something, I'm giving up on you <br />
+I'm sorry that I couldn't get to you <br />
+Anywhere I would've followed you <br />
+Say something, I'm giving up on you <br />
+<br />
+</p>
+</div>
+
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+<div class="col-xs-11 col-sm-5 col-md-5 col-lg-5">
+<p class="navbar-text" style="text-align:center;">
+And I... will swallow my pride <br />
+You're the one that I love <br />
+And I'm saying goodbye <br />
+ <br />
+Say something, I'm giving up on you <br />
+And I'm sorry that I couldn't get to you <br />
+And anywhere I would've followed you (Oh-Ooh) <br />
+Say something, I'm giving up on you <br />
+ <br />
+Say something, I'm giving up on you <br />
+Say something... <br />
+<br />
+</p>
+</div>
+
+      </div> <!--panel body-->
+    </div><!--collapse 2-->
+  </div><!--panel-->
+</div>
+
+            <center><div class="separator line-separator"  id="music"></div></center>
+
+            <h2 class="id-title">#Music</h2>
+
+            <iframe width="100%" height="430" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/9944254&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+            <p class="lead" style="margin-top:30px;">
+              <a href="http://soundcloud.com/undfnd-1" class="btn btn-md btn-warning">Go to Soundcloud</a>
+            </p>
+          
+
+          <center><div class="separator line-separator" id="contact" ></div></center>
+
+          <h2 class="id-title">#Contact</h2>
+
+          </div> <!--inner cover-->
+          </div><!--cover container-->
+
+<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+  
+  <div class="fb-page col-lg-4 col-md-4 col-sm-4 col-xs-12" data-href="https://www.facebook.com/undfnd13/" data-tabs="timeline" data-width="100%" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+  <div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/undfnd13/"><a href="https://www.facebook.com/undfnd13/">Undfnd</a></blockquote></div>
+  </div>
+
+<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+
+<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+<form id="form1" name="form1" class="contact-form" method="post">
+<input type="hidden" name="mode" value="send">
+  <div class="form-group col-xs-12 col-sm-4 col-mid-6">
+    <label for="name"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Name </label>
+    <input type="text" class="form-control" id="name" name="name" aria-required="true" placeholder="name">
+  </div>
+
+  <div class="form-group col-xs-12 col-sm-4 col-mid-6">
+    <label for="areaname"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Area </label>
+    <input type="text" class="form-control" id="areaname" name="areaname" aria-required="true" placeholder="areaname">
+  </div>
+
+  <div class="form-group col-xs-12 col-sm-4 col-mid-6">
+    <label for="email"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> E-mail </label>
+    <input type="email" class="form-control" id="email" name="email" aria-required="true" placeholder="email">
+  </div>
+
+
+  <div class="form-group col-xs-12 col-sm-12 col-mid-12 col-lg-12
+  ">
+    <label for="questype"><span class="glyphicon glyphicon-check" aria-hidden="true"></span> Question Type </label>
+<br>
+    <input type="radio" name="questype" class="radio-inline" id="questype" aria-required="true" placeholder="questype" value="Product">&nbsp;<span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> UndFnd&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <input type="radio" name="questype" class="radio-inline" id="questype" aria-required="true" placeholder="questype" value="Store">&nbsp;<span class="glyphicon glyphicon-music" aria-hidden="true"></span> Music&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <input type="radio" name="questype" class="radio-inline" id="questype" aria-required="true" placeholder="questype" value="Others">&nbsp;<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Others &nbsp;&nbsp;&nbsp;&nbsp;
+</br>
+  </div>
+
+  <div class="form-group col-xs-12">
+  <label for="content"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Content </label>
+  <textarea id="content" name="content" class="form-control" rows="5" aria-required="true"></textarea>
+  </div>
+
+  <div class="form-group col-xs-12">
+    <label for="file"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Attachments </label>
+    <input type="file" id="file1" name="userfile1" value="file1">
+    <input type="file" id="file2" name="userfile2" value="file2">
+    <input type="file" id="file3" name="userfile3" value="file3">
+  </div>
+
+<div class="form-group col-xs-12">
+<input type="button" id="submit" class="btn btn-md btn-danger" value="Submit" onclick="form_Check();" style="cursor:hand;"> <span id="result"></span>
+
+  </div>
+
+</form>
+</div><!--form div-->
+</div><!--site-wrapper-inner-->
+<div class="col-lg-1 col-md-1 col-sm-1 hidden-xs"></div>
+
+
+</div><!-- site wrapper -->
+
+<div class="mastfoot" style="position:relative; text-align:left;">
+              <h5>@UndFnd 2016</h5>
+</div>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/holder.js"></script>
+    <script src="parallax.js-1.3.1/parallax.js"></script>
+        <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+<script>
+$("#name").focus(function() {
+  $('#result').html("");
+  $('#submit').show();
+});
+
+function form_Check(){
+  if(form1.name.value == ''){
+    alert("Input Name");
+    form1.name.focus();
+    return;
+  }
+  if(form1.email.value == ''){
+    alert("Input E-mail");
+    form1.email.focus();
+    return;
+  }
+  if(form1.areaname.value == ''){
+    alert("Input Area");
+    form1.areaname.focus();
+    return;
+  }
+  if(form1.questype[0].checked == false && form1.questype[1].checked == false && form1.questype[2].checked == false){
+    alert("Input Question Type");
+    form1.questype[0].focus();
+    return;
+  }
+  if(form1.content.value == ''){
+    alert("Input Content");
+    form1.content.focus();
+    return;
+  }
+  if(!confirm('Send E-mail?')) return;
+  //form1.submit();
+
+  //Ajax Send Start
+  $('#submit').hide();
+  $('#result').html("<img src='formmail/indicator.gif' align='absmiddle'> <font color='blue'>Sending... Please Wait.</font>");
+  var form = $("form")[0];
+  var formData = new FormData(form);
+  $.ajax({
+    url: "formmail/form_send.php",
+    processData: false,
+    contentType: false,
+    data: formData,
+    type: "POST",
+    cache: false,
+    success: function(args) {
+      $('#result').html(args);
+      $('#form1').trigger("reset");
+      //$('#submit').show();
+    },
+    error: function(args) {
+      $('#result').html("<font color='red'>Failure</font>");
+      $('#form1').trigger("reset");
+      //$('#submit').show();
+    },
+  })
+  //Ajax Sent.
+}
+
+</script>
