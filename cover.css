@@ -32,7 +32,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: czz
   position: relative;
 }
 
@@ -170,7 +170,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 900px;
+    width: 1000px;
   }
 }
 
@@ -212,9 +212,9 @@ body {
   padding:0px;
   background-color: transparent;
   color:white;
+  margin-bottom: 0px;
+  margin-top:0px;
 }
 .panel-heading {
   background-color: #111;
 }
-
-
