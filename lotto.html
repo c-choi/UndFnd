@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+
+</head>
+
+<body>
+
+<span>당첨번호는</span>
+<script type="text/javascript">
+
+  var result = Math.floor(Math.random() *100) + 1;
+  document.write(result);
+
+</script>
+<span>입니다.</span>
+
+<script type="text/javascript">
+	if (result < 2) {
+		alert(result + "등에 당첨 되셨습니다. 파사빈티 홈페이지로 이동합니다.");
+		window.location="http://www.passavinti.co.kr"
+	}
+	else if (result < 10 ) {
+		alert(result + "등에 당첨 되셨습니다. 파사빈티 홈페이지로 이동합니다.");
+		window.location="http://www.tedora.net"
+	}
+	else
+	{}
+</script>
+</body>
+</html>
