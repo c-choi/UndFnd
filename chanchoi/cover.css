@@ -38,7 +38,6 @@ body {
 body {
   color: #111;
   text-align: center;
-  text-shadow: czz
   position: relative;
 }
 
@@ -175,7 +174,7 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 1000px;
+    width: 1200px;
   }
 }
 
