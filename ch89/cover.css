@@ -1,6 +1,18 @@
 /*
  * Globals
  */
+.insta {
+  margin: 2px;
+  opacity:1;
+}
+
+.insta:hover,
+.insta:focus {
+  opacity:0.3;
+-moz-box-shadow: 0 0 10px #ccc; 
+-webkit-box-shadow: 0 0 10px #ccc; 
+box-shadow: 0 0 10px #ccc;
+}
 
 .img-responsive {
   max-width: 300px !important;

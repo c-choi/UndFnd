@@ -126,18 +126,18 @@ if (typeof console === "undefined") {
 <div class="container-fluid" style="display:inline-block;">
 
 
-  <img class="img-responsive" src="img/sake-glass-p.jpg">
+  <img class="img-responsive insta" src="img/sake-glass-p.jpg">
 
-  <img class="img-responsive" src="img/clown-p.jpg">
+  <img class="img-responsive insta" src="img/clown-p.jpg">
 
-  <img class="img-responsive" src="img/undfnd-p.jpg">
+  <img class="img-responsive insta" src="img/undfnd-p.jpg">
 
 
-  <img class="img-responsive" src="img/juntae-col.jpg">
+  <img class="img-responsive insta" src="img/juntae-col.jpg">
 
-  <img class="img-responsive" src="img/juntae-ice-p.jpg">
+  <img class="img-responsive insta" src="img/juntae-ice-p.jpg">
   
-  <img class="img-responsive" src="img/juntae-pencil-p.jpg">
+  <img class="img-responsive insta" src="img/juntae-pencil-p.jpg">
 
 
 
@@ -163,15 +163,17 @@ var userFeed = new Instafeed({
   get: 'user',
   userId: '21550083',
   accessToken: '21550083.d0686d1.ac6062bffb724d2eb36903d577e7dca8',
-  sortBy: "most-liked",
-  resolution: "thumbnail"
+  sortBy: "most-recent",
+  resolution: "low_resolution",
+  limit: "15",
+  template: '<a class="insta" href="{{link}}"><img src="{{image}}" /></a>'
     });
 userFeed.run();
 </script>
-
 <div id="instafeed" style="min-height:300px;"></div>
 
     </div>
+
 
 <center><div class="separator line-separator"  id="footer"></div></center>
 
@@ -182,7 +184,7 @@ userFeed.run();
 
 
 <div class="mastfoot" style="position:relative; text-align:left;">
-              <h5>@choichan 2016</h5>
+              <h5><a href="https://instagram.com/choichan89">@choichan</a> 2016</h5>
 
                
 </div>
