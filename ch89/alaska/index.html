@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Alaska in Jeju">
+    <meta name="author" content="Alaska in Jeju">
+    <meta property="fb:app_id" content="1128147277301497">
+<meta property="og:url"                content="http://www.undfnd.com/ch89/alaska/index.html" />
+<meta property="og:type"               content="website" />
+<meta property="og:title"              content="알라스카인제주" />
+<meta property="og:description"        content="알라스카인제주는 제주 유기농 우유로 그 날 직접 만드는 프리미엄 소프트 아이스크림과 커피, 빙수 및 
+밀크 전문 디저트 카페입니다. " />
+<meta property="og:image"              content="http://www.undfnd.com/ch89/alaska/img/background.jpg" />
+    <link rel="icon" href="http://www.undfnd.com/ch89/alaska/img/favicon.ico">
+
+
+
+    <title>알라스카인제주</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="bootstrap-3.3.7-dist/css/animate.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="bootstrap-3.3.7-dist/js/ie-emulation-modes-warning.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/instafeed.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js">
+    $('body').scrollspy({target: '#navbar-scroll'});
+
+$('[data-spy="scroll"]').each(function () {
+  var $spy = $(this).scrollspy('refresh')
+})
+</script>
+
+<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js">
+
+$(document).ready(function() {
+  // navigation click actions 
+  $('#navbar-scroll').on('click', function(event){
+    event.preventDefault();
+    var sectionID = $(this).attr("data-id");
+    scrollToID('#' + sectionID, 750);
+  });
+  // scroll to top action
+  $('.scroll-top').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({scrollTop:0}, 'slow');     
+  });
+
+});
+// scroll function
+function scrollToID(id, speed){
+  var offSet = -100;
+  var targetOffset = $(id).offset().top - offSet;
+  var mainNav = $('#navbar-scroll');
+  $('html,body').animate({scrollTop:targetOffset}, speed);
+  if (mainNav.hasClass("open")) {
+    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+    mainNav.removeClass("open");
+  }
+}
+if (typeof console === "undefined") {
+    console = {
+        log: function() { }
+    };
+}
+</script>
+  
+<script>
+window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1128147277301497',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/sdk.js#xfbml=1&version=v2.8&appId=1128147277301497";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+      
+  </head>
+
+<body data-spy="scroll" data-target="#navbar-scroll">
+
+    <div class="site-wrapper" >
+
+      <div class="site-wrapper-inner"  id="home">
+
+
+          <div class="masthead clearfix">
+          <div class="masthead-brand"><a href="index.html"><img id="logo" src="img/logo.png"></a></div>
+
+<div class="fb-follow" data-href="https://www.facebook.com/alaskainjejuaewol/" data-width="55" data-height="55" data-layout="button_count" data-size="small" data-show-faces="true"></div>
+          
+            <div class="inner">
+              
+              <div class="masthead-navbar" id="navbar-scroll">
+                <ul class="nav masthead-nav" role="tablist">
+                  <li class="active hidden-xs"><a class="scroll-link" href="#home" data-id="home">Alaska in Jeju</a></li>
+                  <li><a class="scroll-link" data-id="about" href="#about">About</a></li>
+                  <li><a class="scroll-link" data-id="menu" href="#menu">Menu</a></li>
+                  <li><a class="scroll-link" data-id="contact" href="#contact">Contact</a></li>
+                  <li></li>
+                  </ul>
+
+          </div>
+
+        </div>
+        </div><!--masthead clearfix-->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/photo_19.jpeg">
+    </div>
+    <div class="item">
+      <img src="img/photo_2.jpg" alt="...">
+    </div>
+        <div class="item">
+      <img src="img/photo_20.jpeg" alt="...">
+    </div>
+        <div class="item">
+      <img src="img/photo_18.jpeg">
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!--<div class="parallax-window" data-parallax="scroll" data-image-src="img/photo_19.jpeg" data-position-y="-100px"></div>-->
+
+
+<div class="cover-container">
+
+          <div class="inner cover">
+
+
+<center><div class="separator line-separator" id="about"></div></center>
+<br />
+<br />
+            <h2 class="id-title">#About</h2>
+
+          <div class="jumbotron">
+  <img src="img/logo-main.png" alt="알라스카인제주" width="400px">
+  <blockquote><h1 style="color:#333"><em> "알라스카인제주는"</em></h1>
+  <h3>제주 유기농 우유로 그 날 직접 만드는 프리미엄 소프트 아이스크림과 커피, 빙수 및 </br>밀크 전문 디저트 카페입니다. </h3></blockquote>
+</br></br>
+
+<div class="container-fluid" style="display:inline-block;">
+
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_1.jpg">
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_4.jpg">
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_7.jpg">
+
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_6.jpg">
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_15.png">
+  
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_13.png">
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_3.jpg">
+
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_16.jpeg">
+  
+  <img  style="padding-top:3px; max-width: 300px;" src="img/photo_18.jpeg">
+
+</br></br>
+
+</div>
+
+            <center><div class="separator line-separator"></div></center>
+</div>
+</div>
+</div>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/photo_8.jpg"></div>
+
+
+
+
+
+
+<div class="cover-container">
+          <div class="inner cover">
+            <center><div class="separator line-separator"  id="menu"></div></center>
+<br />
+<br />
+            <h2 class="id-title">#Menu</h2>
+
+            <img class="img-responsive" src="img/menu.jpg" alt="menu">
+
+           <center><div class="separator line-separator"></div></center>
+</div>
+</div>
+
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/photo_20.jpeg" data-position-y="-140px 0px"></div>
+
+<div class="cover-container">
+          <div class="inner cover">
+          <center><div class="separator line-separator" id="contact" ></div></center>
+<br />
+<br />
+            <h2 class="id-title">#Contact</h2>
+
+<h2>Instagram</h2>
+
+<script type="text/javascript">
+var userFeed = new Instafeed({
+  get: 'user',
+  userId: '1210499636',
+  accessToken: '1210499636.698a567.4266fbea44df47778008d03aba90a93f',
+  sortBy: "most-recent",
+  resolution: "low_resolution",
+  limit:"12"
+    });
+userFeed.run();
+</script>
+
+<div id="instafeed" style="min-height:300px;"></div>
+<br><br>
+
+
+
+<center><div class="separator line-separator"  id="footer"></div></center>
+
+
+
+<div class="col-lg-1 hidden-md hidden-sm hidden-xs"></div>
+
+
+
+<div class="mastfoot" style="position:relative; text-align:left;">
+              <h5>@Alaska in Jeju 2016</h5>
+
+               
+</div>
+</div><!--inner cover-->
+</div><!--cover container-->
+</div><!--site-wrapper-inner-->
+</div><!-- site wrapper -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/holder.js"></script>
+    <script src="parallax.js-1.3.1/parallax.js"></script>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+
+  </body>
+</html>
+<script>
+  $(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollspy > 600) {
+            $(".scroll-link").addClass("top");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".scroll-link").removeClass("top");
+        }
+    });
+});
+</script>
+
