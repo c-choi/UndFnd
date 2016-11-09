@@ -11,8 +11,17 @@
     <meta name="description" content="CH89">
     <meta name="author" content="CH89">
     <meta property="fb:app_id" content="1770087463232327">
-    <meta property="og:url" content="http://www.undfnd.com/chanchoi/index.html">
-    <meta property="og:image" content="http://www.undfnd.com/chanchoi/img/logo-bk.png">
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="CH89" />
+    <meta property="og:description"        content="CH89" />
+    <meta property="og:url" content="http://www.undfnd.com/ch89/index.html">
+    <meta property="og:image" content="http://www.undfnd.com/ch89/img/undfnd-p.jpg">
+
+
+
+
+
+
     <link rel="icon" href="img/favicon.ico">
 
     <title>CH89</title>
@@ -110,8 +119,6 @@ if (typeof console === "undefined") {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-login-button" data-max-rows="1" data-size="medium" data-show-faces="true" data-auto-logout-link="false"></div>
-
 
     <div class="site-wrapper" >
 
@@ -121,16 +128,23 @@ if (typeof console === "undefined") {
           <div class="masthead clearfix">
           <div class="masthead-brand"><a href="http://www.undfnd.com/chanchoi/index.html"><img id="logo" src="img/logo-bk.png"></a></div>
 
+<div class="fb-follow" data-href="https://www.facebook.com/alaskainjeju/" data-width="55" data-height="55" data-layout="button_count" data-size="small" data-show-faces="true"></div>
+
             <div class="inner">
               
               <div class="masthead-navbar" id="navbar-scroll">
                 <ul class="nav masthead-nav" role="tablist">
                   <li class="active hidden-xs"><a href="#ch89" data-id="ch89">Home</a></li>
                   <!--<li><a class="scroll-link" data-id="work" href="#work">Work</a></li>-->
+                  <li class="dropdown-submenu"><a tabindex="-1" data-id="project" href="#project" id="nav-toggle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Project </a>
+                  <ul class="dropdown-menu">
                   <li><a class="scroll-link" data-id="designs" href="#designs">Designs</a></li>
                   <li><a class="scroll-link" data-id="music" href="#music">Music</a></li>
+                  <li><a class="scroll-link" data-id="undfnd" href="http://www.undfnd.com/index.html">UndFnd</a></li>
+                  <li><a class="scroll-link" data-id="alaska" href="http://www.undfnd.com/ch89/alaska/index.html">Alaska</a></li>
+                   </ul>
+                    </li>
                   <li><a class="scroll-link" data-id="instagram" href="#instagram">Instagram</a></li>
-                  <li><a class="scroll-link" data-id="footer" href="http://www.undfnd.com/ch89/alaska/index.html">Project</a></li>
                   </ul>
           </div>
 
@@ -192,7 +206,8 @@ var userFeed = new Instafeed({
   userId: '21550083',
   accessToken: '21550083.d0686d1.ac6062bffb724d2eb36903d577e7dca8',
   sortBy: "most-liked",
-  resolution: "thumbnail"
+  resolution: "low_resolution",
+  limit:"12"
     });
 userFeed.run();
 </script>

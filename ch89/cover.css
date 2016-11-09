@@ -1,6 +1,38 @@
 /*
  * Globals
  */
+.nav>.open>a {
+  background-color: transparent !important;
+}
+.dropdown-menu {
+  background-color: transparent !important;
+  text-align: left;
+  border:none;
+  box-shadow: none;
+}
+.dropdown-menu>li>a {
+  color:darkgrey;
+  background-color: transparent !important;
+  font-size:15px;
+}
+.dropdown-menu>.active>a {
+  background-color: transparent !important;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: crimson;
+  font-size: 17px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu,
+.dropdown-submenu:focus>.dropdown-menu,
+.dropdown-submenu:active>.dropdown-menu{
+  display:block;
+}
+.dropdown-menu .scroll-link:hover,
+.dropdown-menu .scroll-link:focus,
+.dropdown-menu .scroll-link:active {
+  color:crimson !important;
+}
 
 .fb_iframe_widget {
   margin:20px;
